@@ -1,0 +1,25 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  margin: 15px;
+  background-image: url(../assets/images/bg-sidebar-desktop.svg);
+  width: auto;
+  height: auto;
+}

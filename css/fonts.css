@@ -1,0 +1,26 @@
+.bold {
+    font-family: fontBold;
+}
+
+.medium {
+    font-family: fontMedium;
+}
+
+.regular {
+    font-family: fontRegular;
+}
+
+@font-face {
+    font-family: fontBold;
+    src: url(./assets/fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: fontMedium;
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: fontRegular;
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
