@@ -2,22 +2,22 @@
     font-family: fontBold;
 }
 
-.medium {
-    font-family: fontMedium;
-}
-
-.regular {
-    font-family: fontRegular;
-}
-
 @font-face {
     font-family: fontBold;
     src: url(./assets/fonts/Ubuntu-Bold.ttf);
 }
 
+.medium {
+    font-family: fontMedium;
+}
+
 @font-face {
     font-family: fontMedium;
     src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+
+.regular {
+    font-family: fontRegular;
 }
 
 @font-face {

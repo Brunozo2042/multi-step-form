@@ -11,15 +11,67 @@
   margin: 0;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 #container {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 700px;
 }
 
 .sidebar {
-  margin: 15px;
+  margin: 10px;
+  padding: 30px;
   background-image: url(../assets/images/bg-sidebar-desktop.svg);
-  width: auto;
-  height: auto;
+  background-size: cover;
+}
+
+.sidebar ol {
+  list-style: none;
+  /* Inicializa o contador personalizado */
+  counter-reset: custom-counter;
+  /* Remove o espaçamento padrão da lista */
+  padding-left: 0;
+}
+
+.sidebar ol li {
+  /* Incrementa o contador personalizado a cada item */
+  counter-increment: custom-counter;
+  /* Espaçamento entre os itens */
+  margin-bottom: 8px;
+  /* Permite posicionar o marcador personalizado */
+  position: relative;
+  /* Espaçamento à esquerda para dar espaço ao marcador */
+  padding-left: 30px;
+  color: #ffffff;
+  margin-bottom: 35px;
+  /* Espaço entre o marcador e o texto */
+  padding-left: 45px;
+}
+
+.sidebar ol li:before {
+  /* Mostra o número do contador personalizado */
+  content: counter(custom-counter);
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  align-items: center;
+  justify-content: center;
+  /* Posiciona o marcador dentro do espaço reservado no item */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
