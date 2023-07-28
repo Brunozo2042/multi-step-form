@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: fontBold;
-    src: url(./assets/fonts/Ubuntu-Bold.ttf);
+    src: url(../assets/fonts/Ubuntu-Bold.ttf);
 }
 
 .medium {
@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: fontMedium;
-    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+    src: url(../assets/fonts/Ubuntu-Medium.ttf);
 }
 
 .regular {
@@ -22,5 +22,14 @@
 
 @font-face {
     font-family: fontRegular;
-    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+    src: url(../assets/fonts/Ubuntu-Regular.ttf);
+}
+
+body {
+    font-family: fontRegular;
+}
+
+.colorGrey {
+    color: hsl(231, 11%, 63%);
+    font-size: 12px;
 }
