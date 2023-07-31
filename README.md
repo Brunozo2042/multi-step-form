@@ -6,8 +6,6 @@
 
 Obrigado por entrar em meu projeto.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
 ## Sobre o desafio
 
 Este desafia foi retirado do site [Frontend Mentor](https://www.frontendmentor.io), no qua tem vários desafios de programação do simples ao avançado.
