@@ -1,20 +1,18 @@
-# Frontend Mentor - Multi-step form
+# Multi-step form
 
 ![Design preview for the Multi-step form coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Bem vindo! 👋
 
-Thanks for checking out this front-end coding challenge.
+Obrigado por entrar em meu projeto.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+## Sobre o desafio
 
-## The challenge
+Este desafia foi retirado do site [Frontend Mentor](https://www.frontendmentor.io), no qua tem vários desafios de programação do simples ao avançado.
 
-Your challenge is to build out this multi-step form and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Se trata de um formulários de múltiplos estágios, o primeiro com informações pessoais, o segundo onde o usuário escolhe um plano, o terceiro para adicionais ao plano e o último para confirmar o pagamento, além de um extra agradecendo.
 
 Your users should be able to:
 
