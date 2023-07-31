@@ -1,3 +1,4 @@
+/* Font */
 .bold {
     font-family: fontBold;
 }
@@ -29,7 +30,17 @@ body {
     font-family: fontRegular;
 }
 
+/* Color */
 .colorGrey {
     color: hsl(231, 11%, 63%);
-    font-size: 12px;
+    font-size: 13px;
+}
+
+.colorBlue {
+    color: hsl(213, 96%, 18%);
+}
+
+/* Size */
+.fon16 {
+    font-size: 16px;
 }

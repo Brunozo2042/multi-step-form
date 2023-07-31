@@ -1,0 +1,66 @@
+.step {
+    /* position: absolute; */
+    max-width: max-content;
+    padding: 80px;
+}
+
+/* Step 1 */
+#step1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Step 2 */
+#step2 {
+    display: none;
+}
+
+/* Step 3 */
+#step3 {
+    display: none;
+}
+
+/* Step 4 */
+#step4 {
+    display: none;
+}
+
+/* Step 5 */
+#step5 {
+    display: none;
+}
+
+.next {
+    border-radius: 10px;
+    padding: 10px 20px;
+    max-width: 130px;
+    align-self: flex-end;
+    border: none;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    position: absolute;
+    bottom: 30px;
+}
+
+.next:hover {
+    background-color: hsl(213, 62%, 35%);
+    cursor: pointer;
+}
+
+input {
+    padding: 10px 20px;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 5px;
+    width: 350px;
+    margin: 10px 0px 40px 0px;
+
+}
+
+input:focus {
+    border: 1px solid hsl(243, 100%, 62%);
+}
+
+.header1 {
+    margin-bottom: 50px;
+}

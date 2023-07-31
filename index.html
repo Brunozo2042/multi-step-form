@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/sidebar.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/steps.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/forms_form_list_21786.png">
 
   <title>Multi-step form</title>
 
@@ -63,35 +64,36 @@
     <div>
       <!-- Step 1 start -->
       <div id="step1" class="step">
-        <div>
-          <div class="bold">
+        <div class="header1">
+          <h1 class="bold colorBlue">
             Personal info
-          </div>
-          Please provide your name, email address, and phone number.
+          </h1>
+          <br>
+          <p class="colorGrey">Please provide your name, email address, and phone number.</p>
         </div>
 
         <div>
-          <div>
+          <div class="colorBlue">
             Name
           </div>
-          <input type="text" placeholder="e.g. Stephen King">
+          <input type="text" class="bold colorBlue" placeholder="e.g. Stephen King">
         </div>
 
         <div>
-          <div>
+          <div class="colorBlue">
             Email Address
           </div>
-          <input type="text" placeholder="e.g. stephenking@lorem.com">
+          <input type="text" class="bold colorBlue" placeholder="e.g. stephenking@lorem.com">
         </div>
 
         <div>
-          <div>
+          <div class="colorBlue">
             Phone Number
           </div>
-          <input type="text" placeholder="e.g. +1 234 567 890">
+          <input type="text" class="bold colorBlue" placeholder="e.g. +1 234 567 890">
         </div>
 
-        <button>
+        <button id="Next1" class="next bold" onclick="NextStep1()">
           Next Step
         </button>
       </div>
@@ -172,8 +174,9 @@
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Bruno H</a>.
   </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
