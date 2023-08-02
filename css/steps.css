@@ -1,7 +1,6 @@
 .step {
-    /* position: absolute; */
-    max-width: max-content;
-    padding: 80px;
+    padding: 50px;
+    margin-right: 40px;
 }
 
 /* Step 1 */
@@ -49,7 +48,7 @@
 }
 
 input {
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: 1px solid hsl(231, 11%, 63%);
     border-radius: 5px;
     width: 350px;
