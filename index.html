@@ -20,9 +20,9 @@
   <!-- Sidebar start -->
   <div id="container">
     <div class="sidebar ">
-      <img src="./assets/images/bg-sidebar-desktop.svg" alt="">
+      <img src="./assets/images/bg-sidebar-desktop.svg" id="backSideBar" alt="">
       <ol class="bold">
-        <li class="mark1">
+        <li class="mark1 ">
           <div class="regular colorGrey">
             STEP 1
           </div>
@@ -31,7 +31,7 @@
           </div>
         </li>
 
-        <li class="mark2">
+        <li class="mark2 activeStep">
           <div class="regular colorGrey">
             STEP 2
           </div>
@@ -90,10 +90,11 @@
           <div class="colorBlue">
             Phone Number
           </div>
-          <input type="text" id="inptPhone" class="bold colorBlue" placeholder="e.g. +1 234 567 890">
+          <input type="tel" id="inptPhone" maxlength="15" onkeyup="handlePhone(event)" class="bold colorBlue"
+            placeholder="e.g. (00) 00000-0000">
         </div>
 
-        <button id="Next1" class="next bold" onclick="NextStep1()">
+        <button id="Next2" class="next bold" onclick="NextStep1()">
           Next Step
         </button>
       </div>
@@ -101,26 +102,42 @@
 
       <!-- Step 2 start -->
       <div id="step2" class="step">
-        Select your plan
-        You have the option of monthly or yearly billing.
+        <div class="header1">
+          Select your plan
+          You have the option of monthly or yearly billing.
+        </div>
 
-        <img src="./assets/images/icon-arcade.svg" alt="">
-        Arcade
-        $9/mo
+        <div>
+          <div class="card">
+            <img class="svg" src="./assets/images/icon-arcade.svg" alt="">
+            Arcade
+            $9/mo
+          </div>
 
-        <img src="./assets/images/icon-advanced.svg" alt="">
-        Advanced
-        $12/mo
 
-        <img src="./assets/images/icon-pro.svg" alt="">
-        Pro
-        $15/mo
+          <div class="card">
+            <img class="svg" src="./assets/images/icon-advanced.svg" alt="">
+            Advanced
+            $12/mo
+          </div>
+
+
+          <div class="card">
+            <img class="svg" src="./assets/images/icon-pro.svg" alt="">
+            Pro
+            $15/mo
+          </div>
+        </div>
 
         Monthly
         Yearly
 
-        Go Back
-        Next Step
+        <button id="back2" class="back bold" onclick="Back2()">
+          Go Back
+        </button>
+        <button id="Next1" class="next bold" onclick="NextStep2()">
+          Next Step
+        </button>
       </div>
       <!-- Step 2 end -->
 
@@ -181,6 +198,7 @@
 <!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <!-- JavaScript -->
-<script src="./script.js"></script>
+<script src="./js/functions.js"></script>
+<script src="./js/script.js"></script>
 
 </html>

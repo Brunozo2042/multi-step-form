@@ -1,4 +1,4 @@
-img {
+#backSideBar {
   position: absolute;
 }
 
@@ -50,7 +50,7 @@ img {
   transform: translateY(-50%);
 }
 
-.sidebar ol .mark1::before {
+.activeStep::before {
   background-color: hsl(206, 94%, 87%);
   border-color: hsl(206, 94%, 87%);
   color: hsl(213, 96%, 18%);

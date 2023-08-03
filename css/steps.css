@@ -1,50 +1,52 @@
+/* GENERAL */
 .step {
     padding: 50px;
-    margin-right: 40px;
-}
-
-/* Step 1 */
-#step1 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-/* Step 2 */
-#step2 {
-    display: none;
-}
-
-/* Step 3 */
-#step3 {
-    display: none;
-}
-
-/* Step 4 */
-#step4 {
-    display: none;
-}
-
-/* Step 5 */
-#step5 {
-    display: none;
+    /* margin-right: 40px; */
 }
 
 .next {
     border-radius: 10px;
-    padding: 10px 20px;
-    max-width: 130px;
     align-self: flex-end;
-    border: none;
     background-color: hsl(213, 96%, 18%);
     color: white;
+}
+
+button{
+    padding: 10px 20px;
+    max-width: 130px;
+    border: none;
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .next:hover {
     background-color: hsl(213, 62%, 35%);
     cursor: pointer;
+}
+
+.header1 {
+    margin-bottom: 50px;
+}
+
+.back{
+    background-color: white;
+    color:  hsl(229, 24%, 87%);
+}
+
+.back:hover{
+    color: hsl(213, 96%, 18%);
+}
+
+/* STEP 1 */
+#step1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 40px;
 }
 
 input {
@@ -60,6 +62,29 @@ input:focus {
     border: 1px solid hsl(243, 100%, 62%);
 }
 
-.header1 {
-    margin-bottom: 50px;
+/* STEP 2 */
+#step2 {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.svg{
+    max-width: 40px;
+}
+
+/* STEP 3 */
+#step3 {
+    display: none;
+}
+
+/* STEP 4 */
+#step4 {
+    display: none;
+}
+
+/* STEP 5 */
+#step5 {
+    display: none;
 }
