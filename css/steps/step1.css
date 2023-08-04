@@ -1,0 +1,21 @@
+/* STEP 1 */
+#step1 {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    margin-right: 40px;
+}
+
+input {
+    padding: 15px 20px;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 5px;
+    width: 350px;
+    margin: 10px 0px 40px 0px;
+
+}
+
+input:focus {
+    border: none;
+    outline: 1px solid hsl(243, 100%, 62%);
+}

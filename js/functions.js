@@ -84,4 +84,16 @@ function removeErrorPhone() {
     $("#inptPhone").css("border-color", "hsl(231, 11%, 63%)");
     $("#errorPhone").addClass("d-none");
 }
+
+function clearSelected(cards) {
+    console.log(cards.children);
+    Array.from(cards.children).forEach(card => {
+        card.classList.remove('cardActive')
+    });
+}
+
+function clickCard(card) {
+    card.classList.toggle('cardActive');
+}
+
 // -----------------------------------------

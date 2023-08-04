@@ -34,9 +34,9 @@ function NextStep1() {
     auxEmail = ValidaEmail(email.val())
     auxPhone = ValidaPhone(phone.val())
 
-    console.log(auxName);
-    console.log(auxEmail);
-    console.log(auxPhone);
+    // console.log(auxName);
+    // console.log(auxEmail);
+    // console.log(auxPhone);
 
     if (auxName && auxEmail && auxPhone) {
         // Passa para o próximo passo
