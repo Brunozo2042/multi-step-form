@@ -73,25 +73,42 @@
         </div>
 
         <div>
-          <div class="colorBlue">
-            Name
+          <div class="field">
+            <div class="colorBlue">
+              Name
+            </div>
+            <div id="errorName" class="colorRed bold d-none">
+              Name Incorrect
+            </div>
           </div>
-          <input type="text" id="inptName" class="bold colorBlue" placeholder="e.g. Stephen King">
+          <input type="text" id="inptName" onfocus="removeErrorName()" class="bold colorBlue"
+            placeholder="e.g. Stephen King">
         </div>
 
         <div>
-          <div class="colorBlue">
-            Email Address
+          <div class="field">
+            <div class="colorBlue">
+              Email Address
+            </div>
+            <div id="errorEmail" class="colorRed bold d-none">
+              Email Incorrect
+            </div>
           </div>
-          <input type="text" id="inptEmail" class="bold colorBlue" placeholder="e.g. stephenking@lorem.com">
+          <input type="text" id="inptEmail" class="bold colorBlue" onfocus="removeErrorEmail()"
+            placeholder="e.g. stephenking@lorem.com">
         </div>
 
         <div>
-          <div class="colorBlue">
-            Phone Number
+          <div class="field">
+            <div class="colorBlue">
+              Phone Number
+            </div>
+            <div id="errorPhone" class="colorRed bold d-none">
+              Phone Incorrect
+            </div>
           </div>
-          <input type="tel" id="inptPhone" maxlength="15" onkeyup="handlePhone(event)" class="bold colorBlue"
-            placeholder="e.g. (00) 00000-0000">
+          <input type="tel" id="inptPhone" maxlength="15" onfocus="removeErrorPhone()" onkeyup="handlePhone(event)"
+            class="bold colorBlue" placeholder="e.g. (00) 00000-0000">
         </div>
 
         <button id="Next2" class="next bold" onclick="NextStep1()">

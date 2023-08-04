@@ -68,4 +68,20 @@ const phoneMask = (value) => {
     value = value.replace(/(\d)(\d{4})$/, "$1-$2")
     return value
 }
+
+//Usadas para retirar as mensagens de erro ao focar no campo
+function removeErrorName() {
+    $("#inptName").css("border-color", "hsl(231, 11%, 63%)");
+    $("#errorName").addClass("d-none");
+}
+
+function removeErrorEmail() {
+    $("#inptEmail").css("border-color", "hsl(231, 11%, 63%)");
+    $("#errorEmail").addClass("d-none");
+}
+
+function removeErrorPhone() {
+    $("#inptPhone").css("border-color", "hsl(231, 11%, 63%)");
+    $("#errorPhone").addClass("d-none");
+}
 // -----------------------------------------

@@ -11,7 +11,7 @@
     color: white;
 }
 
-button{
+button {
     padding: 10px 20px;
     max-width: 130px;
     border: none;
@@ -19,7 +19,7 @@ button{
     bottom: 0px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
@@ -32,12 +32,21 @@ button:hover{
     margin-bottom: 50px;
 }
 
-.back{
-    background-color: white;
-    color:  hsl(229, 24%, 87%);
+.field {
+    display: flex;
+    justify-content: space-between;
 }
 
-.back:hover{
+.d-none {
+    display: none;
+}
+
+.back {
+    background-color: white;
+    color: hsl(229, 24%, 87%);
+}
+
+.back:hover {
     color: hsl(213, 96%, 18%);
 }
 
@@ -67,10 +76,10 @@ input:focus {
     display: none;
     flex-direction: column;
     position: relative;
-    
+
 }
 
-.svg{
+.svg {
     max-width: 40px;
 }
 
