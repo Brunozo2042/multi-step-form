@@ -3,7 +3,7 @@
     display: none;
     flex-direction: column;
     position: relative;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 input {
@@ -18,4 +18,8 @@ input {
 input:focus {
     border: none;
     outline: 1px solid hsl(243, 100%, 62%);
+}
+
+#Next1 {
+    right: 0;
 }

@@ -97,4 +97,28 @@ function clearSelected(cards) {
     });
 }
 
+// Esconde/Mostra o bônus pela escolha do pagamento anual
+function alterPay(check) {
+    var cards = $(".card .YearlyPay")
+    var monthly = $("#monthly")
+    var yearly = $("#yearly")
+
+    var Arc = $("#priceArc")
+    var Adv = $("#priceAdv")
+    var Pro = $("#pricePro")
+    if (check.checked) {
+        cards.fadeIn()
+        //Cores
+        monthly.css("color", "hsl(231, 11%, 63%)")
+        yearly.css("color", "hsl(213, 96%, 18%)")
+
+        Arc.tex
+    } else {
+        cards.fadeOut()
+        //Cores
+        monthly.css("color", "hsl(213, 96%, 18%)")
+        yearly.css("color", "hsl(231, 11%, 63%)")
+    }
+}
+
 // -----------------------------------------

@@ -22,8 +22,8 @@
 
 <body>
 
-  <!-- Sidebar start -->
   <div id="container">
+    <!-- Sidebar start -->
     <div class="sidebar ">
       <img src="./assets/images/bg-sidebar-desktop.svg" id="backSideBar" alt="">
       <ol class="bold">
@@ -116,7 +116,7 @@
             class="bold colorBlue" placeholder="e.g. (00) 00000-0000">
         </div>
 
-        <button id="Next2" class="next bold" onclick="NextStep1()">
+        <button id="Next1" class="next bold" onclick="NextStep1()">
           Next Step
         </button>
       </div>
@@ -138,10 +138,12 @@
               <div class="bold colorBlue">
                 Arcade
               </div>
-              $9/mo
-            </div>
-            <div class="colorBlue d-none">
-              2 months free
+              <div id="priceArc">
+                $9/mo
+              </div>
+              <div class="YearlyPay colorBlue d-none">
+                2 months free
+              </div>
             </div>
           </div>
 
@@ -152,8 +154,10 @@
               <div class="bold colorBlue">
                 Advanced
               </div>
-              $12/mo
-              <div class="colorBlue d-none">
+              <div id="priceAdv">
+                $12/mo
+              </div>
+              <div class="YearlyPay colorBlue d-none">
                 2 months free
               </div>
             </div>
@@ -166,16 +170,26 @@
               <div class="bold colorBlue">
                 Pro
               </div>
-              $15/mo
-            </div>
-            <div class="colorBlue d-none">
-              2 months free
+              <div id="pricePro">
+                $15/mo
+              </div>
+              <div class="YearlyPay colorBlue d-none">
+                2 months free
+              </div>
             </div>
           </div>
         </div>
 
-        Monthly
-        Yearly
+        <div id="payment">
+          <div id="monthly" class="colorBlue bold font16">
+            Monthly
+          </div>
+          <input id="toggle" class="toggle" onclick="alterPay(this)" type="checkbox">
+          <label for="toggle"></label>
+          <div id="yearly" class="colorGrey bold font16">
+            Yearly
+          </div>
+        </div>
 
         <button id="back2" class="back bold" onclick="Back2()">
           Go Back

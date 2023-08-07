@@ -9,6 +9,7 @@
     align-self: flex-end;
     background-color: hsl(213, 96%, 18%);
     color: white;
+    margin-right: 50px;
 }
 
 button {
