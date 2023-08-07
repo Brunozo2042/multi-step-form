@@ -85,15 +85,16 @@ function removeErrorPhone() {
     $("#errorPhone").addClass("d-none");
 }
 
+// Utilizada para estilizar os cartões ao clicar
+function clickCard(card, cards) {
+    clearSelected(cards)
+    card.classList.toggle('cardActive');
+}
+
 function clearSelected(cards) {
-    console.log(cards.children);
     Array.from(cards.children).forEach(card => {
         card.classList.remove('cardActive')
     });
-}
-
-function clickCard(card) {
-    card.classList.toggle('cardActive');
 }
 
 // -----------------------------------------

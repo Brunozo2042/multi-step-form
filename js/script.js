@@ -40,8 +40,8 @@ function NextStep1() {
 
     if (auxName && auxEmail && auxPhone) {
         // Passa para o próximo passo
-        step1.css("display", "none")
-        step2.css("display", "flex")
+        step1.hide()
+        step2.show()
         mark1.removeClass('activeStep')
         mark2.addClass('activeStep')
     } else {
@@ -67,8 +67,8 @@ function NextStep2() {
 }
 
 function Back2() {
-    step1.css("display", "flex")
-    step2.css("display", "none")
+    step1.show()
+    step2.hide()
     mark1.addClass('activeStep')
     mark2.removeClass('activeStep')
 }

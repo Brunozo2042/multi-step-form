@@ -131,8 +131,8 @@
           You have the option of monthly or yearly billing.
         </div>
 
-        <div id="cards" onclick="clearSelected(this)">
-          <div class="card" onclick="clickCard(this)">
+        <div id="cards">
+          <div class="card" onclick="clickCard(this,this.parentElement)">
             <img class="svg" src="./assets/images/icon-arcade.svg" alt="">
             <div class="colorGrey font16">
               <div class="bold colorBlue">
@@ -146,7 +146,7 @@
           </div>
 
 
-          <div class="card" onclick="clickCard(this)">
+          <div class="card" onclick="clickCard(this,this.parentElement)">
             <img class="svg" src="./assets/images/icon-advanced.svg" alt="">
             <div class="colorGrey font16">
               <div class="bold colorBlue">
@@ -160,7 +160,7 @@
           </div>
 
 
-          <div class="card" onclick="clickCard(this)">
+          <div class="card" onclick="clickCard(this,this.parentElement)">
             <img class="svg" src="./assets/images/icon-pro.svg" alt="">
             <div class="colorGrey font16">
               <div class="bold colorBlue">
