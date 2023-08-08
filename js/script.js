@@ -59,6 +59,7 @@ function NextStep1() {
 }
 
 // ------------------------------------------------------------------
+// ------------------------------------------------------------------
 function NextStep2() {
     // Checka se algum plano foi selecionado
     if (!validaPlan()) {
@@ -81,4 +82,12 @@ function Back2() {
     step2.hide()
     mark1.addClass('activeStep')
     mark2.removeClass('activeStep')
+}
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+function Back3() {
+    step2.show()
+    step3.hide()
+    mark2.addClass('activeStep')
+    mark3.removeClass('activeStep')
 }

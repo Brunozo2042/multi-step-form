@@ -124,7 +124,7 @@
 
       <!-- Step 2 start -->
       <div id="step2" class="step">
-        <div class="header1">
+        <div class="header1 colorGrey font16">
           <h1 class="bold colorBlue">
             Select your plan
           </h1>
@@ -204,22 +204,60 @@
 
       <!-- Step 3 start -->
       <div id="step3" class="step">
-        Pick add-ons
-        Add-ons help enhance your gaming experience.
-        Online service
-        Access to multiplayer games
-        +$1/mo
+        <header class="header1 colorGrey font16">
+          <h1 class="colorBlue bold">
+            Pick add-ons
+          </h1>
+          Add-ons help enhance your gaming experience.
+        </header>
 
-        Larger storage
-        Extra 1TB of cloud save
-        +$2/mo
+        <div id="addOns">
+          <div class="add">
+            <input type="checkbox" name="" id="chk0">
+            <label for="chk0" class="colorGrey">
+              <div class="bold colorBlue font16">
+                Online service
+              </div>
+              Access to multiplayer games
+            </label>
+            <div class="priceAdd">
+              +$1/mo
+            </div>
+          </div>
 
-        Customizable Profile
-        Custom theme on your profile
-        +$2/mo
+          <div class="add">
+            <input type="checkbox" name="" id="chk1">
+            <label for="chk1" class="colorGrey">
+              <div class="bold colorBlue font16">
+                Larger storage
+              </div>
+              Extra 1TB of cloud save
+            </label>
+            <div class="priceAdd">
+              +$2/mo
+            </div>
+          </div>
 
-        Go Back
-        Next Step
+          <div class="add">
+            <input type="checkbox" name="" id="chk2">
+            <label for="chk2" class="colorGrey">
+              <div class="bold colorBlue font16">
+                Customizable Profile
+              </div>
+              Custom theme on your profile
+            </label>
+            <div class="priceAdd">
+              +$2/mo
+            </div>
+          </div>
+        </div>
+
+        <button id="back3" class="back bold" onclick="Back3()">
+          Go Back
+        </button>
+        <button id="Next1" class="next bold" onclick="NextStep3()">
+          Next Step
+        </button>
       </div>
       <!-- Step 3 end -->
 

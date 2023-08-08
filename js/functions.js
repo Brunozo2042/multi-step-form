@@ -114,16 +114,28 @@ function alterPay(check) {
     var monthly = $("#monthly")
     var yearly = $("#yearly")
 
+    var Arc = $("#priceArc")
+    var Adv = $("#priceAdv")
+    var Pro = $("#pricePro")
+
     if (check.checked) {
         cards.fadeIn()
         //Cores
         monthly.css("color", "hsl(231, 11%, 63%)")
         yearly.css("color", "hsl(213, 96%, 18%)")
+
+        Arc.text("$90/yr")
+        Adv.text("$120/yr")
+        Pro.text("$150/yr")
     } else {
         cards.fadeOut()
         //Cores
         monthly.css("color", "hsl(213, 96%, 18%)")
         yearly.css("color", "hsl(231, 11%, 63%)")
+
+        Arc.text("$9/mo")
+        Adv.text("$12/mo")
+        Pro.text("$15/mo")
     }
 }
 

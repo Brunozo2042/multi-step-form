@@ -1,6 +1,9 @@
 /* GENERAL */
 .step {
     padding: 50px;
+    flex-direction: column;
+    position: relative;
+    width: 440px;
     /* margin-right: 40px; */
 }
 
