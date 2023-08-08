@@ -1,3 +1,5 @@
+var plans = [false, false, false]
+
 // Usadas para validar o step1--------------
 function ValidaEmail(email) {
     var emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
@@ -87,8 +89,17 @@ function removeErrorPhone() {
 
 // Utilizada para estilizar os cartões ao clicar
 function clickCard(card, cards) {
+    $("#step2 p").addClass('d-none')
     clearSelected(cards)
     card.classList.toggle('cardActive');
+
+    // Coloca todos os planos false
+    for (var i = 0; i < 3; i++) {
+        plans[i] = false
+    }
+
+    // set o plano escolhido para true
+    plans[card.dataset.index] = true
 }
 
 function clearSelected(cards) {
@@ -103,22 +114,27 @@ function alterPay(check) {
     var monthly = $("#monthly")
     var yearly = $("#yearly")
 
-    var Arc = $("#priceArc")
-    var Adv = $("#priceAdv")
-    var Pro = $("#pricePro")
     if (check.checked) {
         cards.fadeIn()
         //Cores
         monthly.css("color", "hsl(231, 11%, 63%)")
         yearly.css("color", "hsl(213, 96%, 18%)")
-
-        Arc.tex
     } else {
         cards.fadeOut()
         //Cores
         monthly.css("color", "hsl(213, 96%, 18%)")
         yearly.css("color", "hsl(231, 11%, 63%)")
     }
+}
+
+// Valida se algum plano foi selecionado
+function validaPlan() {
+    for (var i = 0; i < 3; i++) {
+        if (plans[i]) {
+            return true;
+        }
+    }
+    return false
 }
 
 // -----------------------------------------

@@ -76,5 +76,8 @@
 #payment {
     display: flex;
     justify-content: space-around;
-    margin: 50px 100px;
+    margin: 50px 0px;
+    background-color: hsla(243, 100%, 62%, 0.13);
+    padding: 15px 80px;
+    border-radius: 5px;
 }

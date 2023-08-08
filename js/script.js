@@ -22,6 +22,7 @@ var mark2 = $(".mark2")
 var mark3 = $(".mark3")
 var mark4 = $(".mark4")
 
+
 // boolean (yearly/monthly)
 var payment
 
@@ -59,6 +60,19 @@ function NextStep1() {
 
 // ------------------------------------------------------------------
 function NextStep2() {
+    // Checka se algum plano foi selecionado
+    if (!validaPlan()) {
+        $("#step2 p").removeClass('d-none')
+        return
+    }
+
+    step3.show()
+    step2.hide()
+    mark3.addClass('activeStep')
+    mark2.removeClass('activeStep')
+
+    // Recupera o valor do input checkbox
+    payment = document.getElementById("toggle").checked
 
 }
 
