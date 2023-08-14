@@ -1,6 +1,6 @@
 /* STEP 1 */
 #step1 {
-    display: none;
+    display: flex;
     margin-right: 20px;
 }
 
