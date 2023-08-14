@@ -13,3 +13,5 @@ Este desafia foi retirado do site [Frontend Mentor](https://www.frontendmentor.i
 Se trata de um formulários de múltiplos estágios, o primeiro com informações pessoais, o segundo onde o usuário escolhe um plano, o terceiro para adicionais ao plano e o último para confirmar o pagamento, além de um extra agradecendo.
 
 Aproveitei esse desafio para exercitar minhas habilidades, especialmente em Git e GitHub.
+
+Além disso, lidar com vários frames ao mesmo tempo foi um desafio bem interessante.
