@@ -274,17 +274,25 @@
         <div id="resume">
           <div id="selectedPlan">
             <div>
-              <button id="change" class="colorGrey font16" onclick="ChangePlan()">Change</button>
-
+              <div id="plan" class="colorBlue bold"></div>
+              <div>
+                <button id="change" class="colorGrey" onclick="ChangePlan()">Change</button>
+              </div>
             </div>
-            <div id="finalPrice">
-
+            <div id="finalPricePlan" class="colorBlue bold">
             </div>
           </div>
           <hr>
 
+          <div id="finalAdds"></div>
 
-          Total (per month/year)
+          <div id="total" class="colorGrey font16">
+            <div id="per">
+              Total (per month/year)
+            </div>
+            <div id="totalPrice" class="bold">
+            </div>
+          </div>
         </div>
 
         <button id="back4" class="back bold" onclick="Back4()">
@@ -299,11 +307,15 @@
       <!-- Step 5 start -->
       <div id="step5" class="step">
         <img src="./assets/images/icon-thank-you.svg" alt="">
-        Thank you!
+        <h1 class="colorBlue bold">
+          Thank you!
+        </h1>
 
-        Thanks for confirming your subscription! We hope you have fun
-        using our platform. If you ever need support, please feel free
-        to email us at support@loremgaming.com.
+        <p class="colorGrey">
+          Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free
+          to email us at support@loremgaming.com.
+        </p>
       </div>
       <!-- Step 5 end -->
     </div>

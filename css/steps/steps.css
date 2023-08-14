@@ -46,6 +46,11 @@ button:hover {
     display: none;
 }
 
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .back {
     background-color: white;
     color: hsl(229, 24%, 87%);

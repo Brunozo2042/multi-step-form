@@ -1,4 +1,14 @@
 /* STEP 5 */
 #step5 {
-    display: none;
+    display: flex;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#step5 img {
+    height: 80px;
+}
+
+#step5 h1 {
+    margin: 20px 0;
 }

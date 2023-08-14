@@ -1,6 +1,6 @@
 /* STEP 4 */
 #step4 {
-    display: flex;
+    display: none;
 }
 
 #change {
@@ -12,4 +12,35 @@
 
 #change:hover {
     color: blueviolet;
+}
+
+#resume {
+    margin-bottom: 40px;
+}
+
+#selectedPlan {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#plan {
+    margin-bottom: 15px;
+}
+
+#totalPrice {
+    color: hsl(243, 100%, 62%);
+}
+
+#total {
+    display: flex;
+    justify-content: space-between;
+}
+
+#finalAdds {
+    margin: 20px 0;
+}
+
+#finalAdds div {
+    margin-bottom: 8px;
 }

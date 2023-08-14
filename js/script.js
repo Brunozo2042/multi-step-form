@@ -96,7 +96,8 @@ function NextStep3() {
     mark4.addClass('activeStep')
     mark3.removeClass('activeStep')
 
-
+    clearAdds()
+    showPlan()
 }
 
 function Back3() {

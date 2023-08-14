@@ -164,4 +164,91 @@ function activeAdd(add) {
     }
 }
 
+function clearAdds() {
+    $("#finalAdds").empty()
+}
+
+// se payment == true, pagamento anual senão é mensal
+function showPlan() {
+    var total = 0
+    // Plano Escolhido
+    switch (plans.indexOf(true)) {
+        case 0:
+            if (payment) {
+                $("#plan").text("Arcade(Yearly)")
+                $("#finalPricePlan").text("$90/yr")
+                total += 90
+            } else {
+                $("#plan").text("Arcade(Monthly)")
+                $("#finalPricePlan").text("$9/mo")
+                total += 9
+            }
+            break;
+        case 1:
+            if (payment) {
+                $("#plan").text("Advanced(Yearly)")
+                $("#finalPricePlan").text("$120/yr")
+                total += 120
+            } else {
+                $("#plan").text("Arcade(Monthly)")
+                $("#finalPricePlan").text("$12/mo")
+                total += 12
+            }
+            break;
+        case 2:
+            if (payment) {
+                $("#plan").text("Pro(Yearly)")
+                $("#finalPricePlan").text("$150/yr")
+                total += 150
+            } else {
+                $("#plan").text("Pro(Monthly)")
+                $("#finalPricePlan").text("$15/mo")
+                total += 15
+            }
+    }
+
+    // Adds escolhidos
+    for (var i = 0; i < 3; i++) {
+        if (adds[i]) {
+            switch (i) {
+                case 0:
+                    if (payment) {
+                        $("#finalAdds").append("<div class='d-flex font16'> <div class='colorGrey'> Online service </div> <div class='colorBlue'> +$10/yr </div> </div>");
+                        total += 10
+                    } else {
+                        $("#finalAdds").append("<div class='d-flex font16'> <div class='colorGrey'> Online service </div> <div class='colorBlue'> +$1/mo </div> </div>");
+                        total += 1
+                    }
+                    break;
+                case 1:
+                    if (payment) {
+                        $("#finalAdds").append("<div class='d-flex font16'> <div class='colorGrey'> Larger storage </div> <div class='colorBlue'> +$20/yr </div> </div>");
+                        total += 20
+                    } else {
+                        $("#finalAdds").append("<div class='d-flex font16'> <div class='colorGrey'> Larger storage </div> <div class='colorBlue'> +$2/mo </div> </div>");
+                        total += 2
+                    }
+                    break;
+                case 2:
+                    if (payment) {
+                        $("#finalAdds").append("<div class='d-flex font16'> <div class='colorGrey'> Customizable Profile </div> <div class='colorBlue'> +$20/yr </div> </div>");
+                        total += 20
+                    } else {
+                        $("#finalAdds").append("<div class='d-flex font16'> <div class='colorGrey'> Customizable Profile </div> <div class='colorBlue'> +$2/mo </div> </div>");
+                        total += 2
+                    }
+            }
+        }
+    }
+
+    // Valor total
+    if (payment) {
+        $("#per").text("Total per year")
+        $("#totalPrice").text("+$" + total + "/yr")
+    } else {
+        $("#per").text("Total per month")
+        $("#totalPrice").text("+$" + total + "/mo")
+    }
+}
+
 // -----------------------------------------
