@@ -108,7 +108,9 @@ function Back3() {
 }
 // ------------------------------------------------------------------
 // ------------------------------------------------------------------
-function NextStep4() { }
+function NextStep4() {
+    mark4.removeClass('activeStep')
+}
 
 function Back4() {
     step3.show()
