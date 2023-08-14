@@ -1,4 +1,15 @@
 /* STEP 4 */
 #step4 {
-    display: none;
+    display: flex;
+}
+
+#change {
+    position: relative;
+    background-color: white;
+    padding: 0;
+    text-decoration: underline;
+}
+
+#change:hover {
+    color: blueviolet;
 }

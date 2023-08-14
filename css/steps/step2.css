@@ -24,11 +24,6 @@
     flex-direction: column;
 }
 
-.cardActive {
-    border: 1px solid hsl(243, 100%, 62%);
-    background-color: hsla(243, 100%, 62%, 0.13);
-}
-
 .card:hover {
     cursor: pointer;
     border: 1px solid hsl(243, 100%, 62%);

@@ -13,6 +13,7 @@
     background-color: hsl(213, 96%, 18%);
     color: white;
     margin-right: 50px;
+    right: 0;
 }
 
 button {
@@ -52,4 +53,13 @@ button:hover {
 
 .back:hover {
     color: hsl(213, 96%, 18%);
+}
+
+.confirm {
+    background-color: hsl(243, 100%, 62%);
+    border-radius: 10px;
+    align-self: flex-end;
+    color: white;
+    margin-right: 50px;
+    right: 0;
 }

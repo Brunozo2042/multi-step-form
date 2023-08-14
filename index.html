@@ -112,7 +112,7 @@
               Phone Incorrect
             </div>
           </div>
-          <input type="tel" id="inptPhone" maxlength="15" onfocus="removeErrorPhone()" onkeyup="handlePhone(event)"
+          <input type="text" id="inptPhone" maxlength="15" onfocus="removeErrorPhone()" onkeyup="handlePhone(event)"
             class="bold colorBlue" placeholder="e.g. (00) 00000-0000">
         </div>
 
@@ -211,22 +211,22 @@
           Add-ons help enhance your gaming experience.
         </header>
 
+
         <div id="addOns">
-          <div class="add">
-            <input type="checkbox" name="" id="chk0">
-            <label for="chk0" class="colorGrey">
+          <div class="add" data-index="0" onclick="activeAdd(this)">
+            <label class="colorGrey">
               <div class="bold colorBlue font16">
                 Online service
               </div>
               Access to multiplayer games
             </label>
-            <div class="priceAdd">
+            <div id="prcOnlineService" class="priceAdd">
               +$1/mo
             </div>
           </div>
 
-          <div class="add">
-            <input type="checkbox" name="" id="chk1">
+
+          <div class="add" data-index="1" onclick="activeAdd(this)">
             <label for="chk1" class="colorGrey">
               <div class="bold colorBlue font16">
                 Larger storage
@@ -238,8 +238,8 @@
             </div>
           </div>
 
-          <div class="add">
-            <input type="checkbox" name="" id="chk2">
+
+          <div class="add" data-index="2" onclick="activeAdd(this)">
             <label for="chk2" class="colorGrey">
               <div class="bold colorBlue font16">
                 Customizable Profile
@@ -263,15 +263,36 @@
 
       <!-- Step 4 start -->
       <div id="step4" class="step">
-        Finishing up
-        Double-check everything looks OK before confirming.
+        <header class="header1 colorGrey font16">
+          <h1 class="colorBlue bold">
+            Finishing up
+          </h1>
+          Double-check everything looks OK before confirming.
+        </header>
 
         <!-- Dynamically add subscription and add-on selections here -->
+        <div id="resume">
+          <div id="selectedPlan">
+            <div>
+              <button id="change" class="colorGrey font16" onclick="ChangePlan()">Change</button>
 
-        Total (per month/year)
+            </div>
+            <div id="finalPrice">
 
-        Go Back
-        Confirm
+            </div>
+          </div>
+          <hr>
+
+
+          Total (per month/year)
+        </div>
+
+        <button id="back4" class="back bold" onclick="Back4()">
+          Go Back
+        </button>
+        <button id="Next1" class="confirm bold" onclick="NextStep4()">
+          Confirm
+        </button>
       </div>
       <!-- Step 4 end -->
 

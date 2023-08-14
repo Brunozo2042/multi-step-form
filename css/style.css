@@ -32,3 +32,8 @@ body {
   border-radius: 15px;
   box-shadow: 10px 10px 15px #00000073;
 }
+
+.cardActive {
+  border: 1px solid hsl(243, 100%, 62%);
+  background-color: hsla(243, 100%, 62%, 0.13);
+}

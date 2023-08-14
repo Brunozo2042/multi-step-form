@@ -1,6 +1,7 @@
 var plans = [false, false, false]
+var adds = [false, false, false]
 
-// Usadas para validar o step1--------------
+// Usadas para validar o step1
 function ValidaEmail(email) {
     var emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
     return emailPattern.test(email);
@@ -87,7 +88,7 @@ function removeErrorPhone() {
     $("#errorPhone").addClass("d-none");
 }
 
-// Utilizada para estilizar os cartões ao clicar
+// Utilizada para estilizar os cartões ao clicar step2
 function clickCard(card, cards) {
     $("#step2 p").addClass('d-none')
     clearSelected(cards)
@@ -108,7 +109,7 @@ function clearSelected(cards) {
     });
 }
 
-// Esconde/Mostra o bônus pela escolha do pagamento anual
+// Esconde/Mostra o bônus pela escolha do pagamento anual step2
 function alterPay(check) {
     var cards = $(".card .YearlyPay")
     var monthly = $("#monthly")
@@ -139,7 +140,7 @@ function alterPay(check) {
     }
 }
 
-// Valida se algum plano foi selecionado
+// Valida se algum plano foi selecionado step2
 function validaPlan() {
     for (var i = 0; i < 3; i++) {
         if (plans[i]) {
@@ -147,6 +148,20 @@ function validaPlan() {
         }
     }
     return false
+}
+
+// Ativa/desativa adicionais do plano step3 
+function activeAdd(add) {
+    // console.log($(".add"));
+    var check = add.firstElementChild
+    add.classList.toggle('cardActive')
+    if (check.checked) {
+        check.checked = false
+        adds[add.dataset.index] = false
+    } else {
+        check.checked = true
+        adds[add.dataset.index] = true
+    }
 }
 
 // -----------------------------------------

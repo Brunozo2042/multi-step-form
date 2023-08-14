@@ -22,10 +22,8 @@ var mark2 = $(".mark2")
 var mark3 = $(".mark3")
 var mark4 = $(".mark4")
 
-
 // boolean (yearly/monthly)
 var payment
-
 
 var auxName, auxEmail, auxPhone;
 
@@ -75,6 +73,13 @@ function NextStep2() {
     // Recupera o valor do input checkbox
     payment = document.getElementById("toggle").checked
 
+    if (payment) {
+        $(".add .priceAdd").text("+$20/yr")
+        $(".add #prcOnlineService").text("+$10/yr")
+    } else {
+        $(".add .priceAdd").text("+$2/mo")
+        $(".add #prcOnlineService").text("+$1/mo")
+    }
 }
 
 function Back2() {
@@ -85,9 +90,35 @@ function Back2() {
 }
 // ------------------------------------------------------------------
 // ------------------------------------------------------------------
+function NextStep3() {
+    step4.show()
+    step3.hide()
+    mark4.addClass('activeStep')
+    mark3.removeClass('activeStep')
+
+
+}
+
 function Back3() {
     step2.show()
     step3.hide()
     mark2.addClass('activeStep')
     mark3.removeClass('activeStep')
+}
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+function NextStep4() { }
+
+function Back4() {
+    step3.show()
+    step4.hide()
+    mark3.addClass('activeStep')
+    mark4.removeClass('activeStep')
+}
+
+function ChangePlan() {
+    step2.show()
+    step4.hide()
+    mark2.addClass('activeStep')
+    mark4.removeClass('activeStep')
 }

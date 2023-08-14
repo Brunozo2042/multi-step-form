@@ -10,10 +10,20 @@
     display: flex;
     border-radius: 10px;
     height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add:hover {
+    cursor: pointer;
+    border: 1px solid hsl(243, 100%, 62%);
 }
 
 .priceAdd {
     color: hsl(243, 100%, 62%);
 }
 
-.add input[type="checkbox"] {}
+.add input[type="checkbox"] {
+    margin-right: 20px;
+}
