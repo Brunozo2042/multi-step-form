@@ -21,3 +21,7 @@ TIP for phone number: DDD are the numbers between the parentheses () that repres
 ![Imagem DDD Brasil](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Mapa_do_Brasil_por_código_DDD.svg/649px-Mapa_do_Brasil_por_código_DDD.svg.png)
 
 Here is an image with all the area codes in Brazil.
+
+After that, it is followed by 5 numbers, the first of which must be 9, then hyphen "-" and 4 more numbers
+
+Example: (41) 91234-5678
